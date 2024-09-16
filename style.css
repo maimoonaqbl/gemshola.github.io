@@ -423,6 +423,9 @@ nav .sidemenu .fa-solid{
     left: 25px;
     cursor: pointer;
 }
+.container{
+    max-width: 350px;
+}
 .footer-col-1 img{
     
     width: 20%;
