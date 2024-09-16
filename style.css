@@ -1,0 +1,431 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}  /*this applies to the whole website*/
+html{
+    scroll-behavior: smooth; /*this added added linking the top menu with its sections in header section
+    this scroll behavior makes the smooth transition, without this it was not smooth*/
+}
+body{
+    background: black;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+nav{
+    margin: 20px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; /*items remain in the center of nav bar */ 
+    justify-content: space-between; /*equal spacing between elements in nav bar*/
+    
+    padding: 3px 3px; /*all elements spacing from top and bottom of navbar*/
+    color: #fff; 
+    
+}
+nav img{
+    width: 140px;
+}
+
+nav .sidemenu {
+    
+    margin-left: 20px;
+    display: flex;
+    gap: 60px;
+    position: relative;   
+
+}
+nav .fa-solid{
+    display: none; /*open close icon should not display*/
+}
+
+/*-------------Gemstones--------------*/
+
+
+.row{
+    margin: 10px 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%; /*i can give width of my image here as well instead of in html*/
+}
+.about-col-2{
+    margin-top: 100px;
+    flex-basis: 60%; /*col-1 is at 35% and col-2 at 60% so space between two columns is 5%*/
+}
+
+.sub-title{
+    
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+
+}
+.wrap-text{
+    margin-top: 80px;
+    text-align: justify;
+}
+
+
+/*-------------------------slider-------------------------------*/
+
+.container{
+    margin: 40px 80px;
+    max-width: 1080px;
+    width: 90%;
+    
+    justify-content: space-between;
+}
+
+.slider-wrapper .slide-button{
+    display: flex;
+    position: absolute;
+    background: #fff;
+    background-size: cover;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    align-items: center;
+    
+}
+.slider-wrapper .slide-button:hover{
+    background: #444;
+}
+.slider-wrapper .slide-button#prev-slide{
+    left: 80px;
+    margin-top: 45px;
+}
+.slider-wrapper .slide-button#next-slide{
+    right: 80px;
+    margin-top: -55px;
+}
+.slider-wrapper .image-list{
+    display: grid;
+    gap: 23px;
+    grid-template-columns: repeat(13,1fr);
+    font: 0;
+    overflow-x: auto; /*this gives scroll under slider*/
+    scrollbar-width: none; /*to hide scroll add scrollbar-width and alsi -webkit-scrollbar*/
+}
+.slider-wrapper .image-list::-webkit-scrollbar{
+    display: none;
+}
+.slider-wrapper .image-list .image-item{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.container .explore-more{
+    margin: 50px;
+    
+}
+
+.container .explore-more .button2{
+    position: absolute;
+    right: 80px;
+    text-align: center;
+    width: 160px;
+    color: #892b0fe9;
+    font-size: 12px;
+    font-weight: 800;
+    padding: 15px 20px;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    
+}
+.button2:hover{
+    transform: translateY(-10px);
+}
+
+
+/*---------------Jewelery-------------*/
+#jewelry{
+    margin-top: 160px;
+    
+}
+.box-row{
+    margin: 80px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    justify-content: space-between; 
+    align-items: center;
+    position: relative;
+}
+.box-col{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 20px;
+    background: #fff;
+    color: #000000; /*text color*/
+    max-width: 24%;
+    min-width: 200px;
+}
+.box-col a{
+    font-size: 12px;
+    color: #892b0fe9;
+    font-weight: 700;
+}
+
+/*---------------recommendations ----------------*/
+#recommendations{
+    margin: 80px;
+}
+.recomm1{
+    text-align: center;
+    justify-content: space-between;
+}
+.recomm2{
+    margin-top: 20px;
+}
+
+.recomm{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    margin-top: 50px;
+    
+   
+}
+
+.recomm img{
+    width: 100%; /* width of image and width of background should be defined same */
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    padding: 20px 20px;
+    background-color: rgba(128, 128, 128, 0.296);
+    flex-direction: column;
+    display: flex;
+    align-items: center; /* these three lines fix the image with its background in the center */
+    justify-content: center;
+    flex-direction: column;
+
+}
+.layer h3{
+    
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+    font-weight: 300;
+}
+.layer a{
+    margin-top: 20px;
+    align-content: space-between;
+    font-size: 10px;
+    color: #892b0fe9;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 800;
+    align-self: center;
+}
+
+/*------------Purchase----------------*/
+#purchase{
+    
+    text-align: center;
+}
+.purchase-col-2 .wrap-text{
+    margin: 10px 80px;
+    text-align: center;
+}
+
+.purchase-col-2 img{
+    
+    margin: 80px 0; /* 80px margin on top and bottom, 0 on left and right */
+    width: 100%; /* Full width of the viewport */
+    
+    justify-content: center; /* Center the image horizontally */
+    align-items: center;
+    
+}
+
+.button1{
+    text-align: center;
+    width: 280px;
+    color: #892b0fe9;
+    font-size: 12px;
+    font-weight: 800;
+    padding: 15px 20px;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+.button1:hover{
+    transform: translateY(-10px);
+}
+
+/*--------------certifications---------------*/
+
+.cer1{
+    margin: 80px;
+    text-align: center;
+}
+
+.cer2{
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    position: relative;
+    justify-content: space-evenly;
+}
+.cer-layer{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    background-color: rgba(128, 128, 128, 0.296);
+
+}
+.cer-layer img{
+    
+    width: 200px;
+    height: 200px;
+    
+}
+.cer1 .cer {
+    margin-top: 50px;
+    width: 80%;
+    background-color: rgba(128, 128, 128, 0.296);
+    padding: 10px 10px;
+}
+
+
+
+
+/*----------footer-----------*/
+.line {
+    margin: 0 80px 20px; /* top left right bottom */
+     /* Adjust the width as needed */
+    height: 2px; /* Adjust the height for line thickness */
+    background-color: #fff; /* Change the color to your preference */
+  }
+.footer{
+    color: #fff;
+    padding: 0;
+    
+  }
+/*.footer-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+    
+}*/
+.footer-row{
+    display: grid;
+    
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+    
+}
+.footer-col-1{
+    flex-basis: 20%;
+    
+}
+.footer-col-1 img{
+    
+    width: 40%;
+}
+.footer-col-1 p{
+    text-align: justify;
+    text-wrap: wrap;
+    font-size: 12px;
+    margin: 10px 0;
+    
+}
+.footer-col-1 i{
+    font-size: 30px;
+    margin-top: 20px;
+    
+}
+.footer-row h3{
+    font-size: 16px;
+    text-align: left;
+}
+.footer-row ul{
+    margin-top: 20px;
+    column-gap: 20px;
+    font-size: 13px;
+    list-style-type: none; /*to remove bullet points*/
+}
+.footer-col-2, .footer-col-3, .footer-col-4{
+    margin-left: 20px;
+    flex: 1; /*it will use all the available space*/
+    text-align: left;
+}
+.copyright{
+    font-size: 12px;
+    margin: 20px 0 20px;
+    text-align: center;
+    
+}
+
+
+@media only screen and (max-width: 700px){
+.about-col-1, .about-col-2{
+    flex-basis: 100%;
+}
+
+
+nav .fa-solid{
+    display: block;
+    font-size: 25px;
+}
+nav .sidemenu{
+    background-color: black; /*to show menu icons in a side bar*/
+    position: fixed;
+    top: 0;
+    right: -200px; /* first put it 0, the side bar will be visible all the time now to hide it make it 
+    equal to width but -200px*/
+    width: 200px;
+    height: 100vh;
+    padding: 60px 20px;
+    z-index: 2; /*added for menu and x funtion.. after this add JS in HTML*/
+    transition: ease-in-out 0.5s;
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+}
+nav ul li{
+    display: block; /*to arrange menu vertically*/
+    margin: 25px;
+}
+nav .sidemenu .fa-solid{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+.footer-col-1 img{
+    
+    width: 20%;
+}
+
+}
