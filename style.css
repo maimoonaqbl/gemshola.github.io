@@ -54,14 +54,14 @@ nav .fa-solid{
     flex-wrap: wrap;
 }
 .about-col-1{
-    flex-basis: 35%;
+    flex-basis: 45%;
 }
 .about-col-1 img{
     width: 100%; /*i can give width of my image here as well instead of in html*/
 }
 .about-col-2{
     margin-top: 100px;
-    flex-basis: 60%; /*col-1 is at 35% and col-2 at 60% so space between two columns is 5%*/
+    flex-basis: 50%; /*col-1 is at 35% and col-2 at 60% so space between two columns is 5%*/
 }
 
 .sub-title{
@@ -155,7 +155,7 @@ nav .fa-solid{
 /*---------------Jewelery-------------*/
 #jewelry{
     margin-top: 160px;
-    
+     
 }
 .box-row{
     margin: 80px 80px;
@@ -240,7 +240,7 @@ nav .fa-solid{
 
 /*------------Purchase----------------*/
 #purchase{
-    
+    margin: 80px;
     text-align: center;
 }
 .purchase-col-2 .wrap-text{
@@ -326,6 +326,10 @@ nav .fa-solid{
     padding: 0;
     
   }
+.container1{
+    margin: 10px 80px;
+    justify-content: space-between;
+}
 /*.footer-row{
     display: flex;
     justify-content: space-between;
